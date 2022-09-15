@@ -1,0 +1,14 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "Peachpay Dogs App",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    
+    "start": "concurrently \"cd frontend && npm i && npm run dev\" \"cd backend && node server.js\" ",
+    "install": "concurrently \"cd frontend && npm i\" \"cd backend && npm i\" ",
+    "test": "cd backend && mocha server.test.js"
+  }
+}
